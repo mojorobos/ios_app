@@ -21,6 +21,7 @@
 		AB1807FA1F95EB09004D178B /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807F91F95EB09004D178B /* Session.m */; };
 		AB1807FD1F95F244004D178B /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807FC1F95F244004D178B /* SettingsTableViewController.m */; };
 		AB9377131F96077E00107BCE /* Wand.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9377121F96077E00107BCE /* Wand.m */; };
+		AB9377171F962DA600107BCE /* SobelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9377161F962DA600107BCE /* SobelObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		AB1807FC1F95F244004D178B /* SettingsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		AB9377111F96077E00107BCE /* Wand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wand.h; sourceTree = "<group>"; };
 		AB9377121F96077E00107BCE /* Wand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wand.m; sourceTree = "<group>"; };
+		AB9377151F962DA600107BCE /* SobelObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SobelObject.h; sourceTree = "<group>"; };
+		AB9377161F962DA600107BCE /* SobelObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SobelObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,7 @@
 		AB00385E1F95DC8C00035C5B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AB9377141F962D8700107BCE /* Model */,
 				AB1807E81F95E8AB004D178B /* Controllers */,
 				AB00385F1F95DC9B00035C5B /* Helpers */,
 			);
@@ -186,6 +190,15 @@
 				AB1807FC1F95F244004D178B /* SettingsTableViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB9377141F962D8700107BCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB9377151F962DA600107BCE /* SobelObject.h */,
+				AB9377161F962DA600107BCE /* SobelObject.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +336,7 @@
 			files = (
 				AB1807FA1F95EB09004D178B /* Session.m in Sources */,
 				AB00382F1F95ADE000035C5B /* ViewController.m in Sources */,
+				AB9377171F962DA600107BCE /* SobelObject.m in Sources */,
 				AB00383A1F95ADE000035C5B /* main.m in Sources */,
 				AB9377131F96077E00107BCE /* Wand.m in Sources */,
 				AB1807FD1F95F244004D178B /* SettingsTableViewController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Wand.h"
+#import "Session.h"
 
 @interface ViewController () <UIImagePickerControllerDelegate,
                               UINavigationControllerDelegate,
@@ -57,7 +58,21 @@
     __weak ViewController *weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         ViewController *strongSelf = weakSelf;
-        [strongSelf setImageWithOrientationRight:[Wand applyGrayScaleOnImage:strongSelf.originalImage]];
+        UIImage *new_image = [Wand applyGrayScaleOnImage:strongSelf.originalImage];
+        new_image = [Wand applyGaussianOnImage:new_image];
+        SobelObject *sobelObj = [Wand applySobelOnImage:new_image];
+        
+        Session *session = [Session sharedInstance];
+        if (session.usingCanny) {
+            NSInteger max = session.cannyMaxTrashold;
+            NSInteger min = session.cannyMinTrashold;
+            new_image = [Wand applyCannyOnSobelObj:sobelObj withMax:max andMinTrashold:min];
+            [strongSelf setImageWithOrientationRight:new_image];
+        } else {
+            [strongSelf setImageWithOrientationRight:sobelObj.image];
+        }
+        
+        [sobelObj done];
     });
 }
 
