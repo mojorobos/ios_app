@@ -10,11 +10,6 @@
 
 @interface Session ()
 
-@property (nonatomic, assign) BOOL      usingSobel;
-@property (nonatomic, assign) BOOL      usingCanny;
-@property (nonatomic, assign) NSInteger cannyMaxTrashold;
-@property (nonatomic, assign) NSInteger cannyMinTrashold;
-
 @end
 
 @implementation Session
@@ -35,7 +30,7 @@
     self = [super init];
     if (self) {
         self.cannyMaxTrashold = 200;
-        self.cannyMinTrashold = 200;
+        self.cannyMinTrashold = 50;
         self.usingSobel = YES;
         self.usingCanny = YES;
     }

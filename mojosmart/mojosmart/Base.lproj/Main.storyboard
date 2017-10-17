@@ -402,10 +402,10 @@ Cg
                         <sections>
                             <tableViewSection headerTitle="Sobel" id="nwB-Zo-o1Y">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="egk-CC-iLH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="egk-CC-iLH">
                                         <rect key="frame" x="0.0" y="50" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="egk-CC-iLH" id="JSj-RT-ibV">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="egk-CC-iLH" id="JSj-RT-ibV">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -413,7 +413,7 @@ Cg
                                                     <rect key="frame" x="300" y="34" width="71" height="31"/>
                                                     <color key="onTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </switch>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The Sobel operator is the default edge detection algorithm for this project and you cannot disable it." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="18p-2o-aAg">
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="The Sobel operator is the default edge detection algorithm for this project and you cannot disable it." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18p-2o-aAg">
                                                     <rect key="frame" x="8" y="18" width="284" height="73"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -438,7 +438,7 @@ Cg
                             </tableViewSection>
                             <tableViewSection headerTitle="Canny" id="6bq-dG-GwZ">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="IUY-Pj-IPl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="IUY-Pj-IPl">
                                         <rect key="frame" x="0.0" y="200" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IUY-Pj-IPl" id="Yuh-Lc-tUE">
@@ -447,8 +447,11 @@ Cg
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eMk-jG-MRv">
                                                     <rect key="frame" x="300" y="34" width="71" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchChanged:" destination="j7Y-bK-dvg" eventType="valueChanged" id="j3B-Ti-GLg"/>
+                                                    </connections>
                                                 </switch>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The Canny operator is an optional edge detection algorithm for this project and you may set its max and min thrashold." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tJP-ZS-C1Q">
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="The Canny operator is an optional edge detection algorithm for this project and you may set its max and min thrashold." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJP-ZS-C1Q">
                                                     <rect key="frame" x="8" y="18" width="284" height="73"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -469,14 +472,14 @@ Cg
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ihv-Gq-BR7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="ihv-Gq-BR7">
                                         <rect key="frame" x="0.0" y="300" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ihv-Gq-BR7" id="XVO-f7-mlO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Max Thrashold" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kiV-eM-PCP">
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Max Thrashold" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiV-eM-PCP">
                                                     <rect key="frame" x="8" y="28" width="227" height="63"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -488,6 +491,9 @@ Cg
                                                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="700" minValue="0.0" maxValue="1001" translatesAutoresizingMaskIntoConstraints="NO" id="6zg-XL-bsz">
                                                     <rect key="frame" x="241" y="35" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="maxTrasholdChanged:" destination="j7Y-bK-dvg" eventType="valueChanged" id="hpy-DB-JRF"/>
+                                                    </connections>
                                                 </slider>
                                             </subviews>
                                             <constraints>
@@ -497,14 +503,14 @@ Cg
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bhq-u2-Cy2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="bhq-u2-Cy2">
                                         <rect key="frame" x="0.0" y="400" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bhq-u2-Cy2" id="PdC-d1-WCY">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Min Thrashold" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ge8-ez-snU">
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Min Thrashold" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge8-ez-snU">
                                                     <rect key="frame" x="8" y="28" width="227" height="63"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -516,6 +522,9 @@ Cg
                                                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="700" minValue="0.0" maxValue="1001" translatesAutoresizingMaskIntoConstraints="NO" id="2Ki-oh-6UC">
                                                     <rect key="frame" x="241" y="35" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="minTrasholdChanged:" destination="j7Y-bK-dvg" eventType="valueChanged" id="30W-R1-lV3"/>
+                                                    </connections>
                                                 </slider>
                                             </subviews>
                                             <constraints>
@@ -533,6 +542,13 @@ Cg
                             <outlet property="delegate" destination="j7Y-bK-dvg" id="5yE-i9-r9z"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="cannySwitch" destination="eMk-jG-MRv" id="fwP-f9-hdZ"/>
+                        <outlet property="maxTrasholdLabel" destination="kiV-eM-PCP" id="blI-la-RRg"/>
+                        <outlet property="maxTrasholdSlider" destination="6zg-XL-bsz" id="FP9-Wr-waC"/>
+                        <outlet property="minTrasholdLabel" destination="Ge8-ez-snU" id="OTv-np-Kvl"/>
+                        <outlet property="minTrasholdSlider" destination="2Ki-oh-6UC" id="U9q-mx-R46"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZ9-V6-PUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
