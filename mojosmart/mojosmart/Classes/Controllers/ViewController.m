@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Wand.h"
 
 @interface ViewController () <UIImagePickerControllerDelegate,
                               UINavigationControllerDelegate,
@@ -53,6 +54,11 @@
 
 // -------------------------------------------------
 - (IBAction)wandPressed:(id)sender {
+    __weak ViewController *weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        ViewController *strongSelf = weakSelf;
+        [strongSelf setImageWithOrientationRight:[Wand applyGaussianForImage:strongSelf.originalImage]];
+    });
 }
 
 // -------------------------------------------------
@@ -106,11 +112,16 @@
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
     self.originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
-    UIImage *newImage = [UIImage imageWithCGImage:[self.originalImage CGImage]
-                        scale:[self.originalImage scale]
-                  orientation: UIImageOrientationRight];
-    self.imageView.image = newImage;
+    [self setImageWithOrientationRight:self.originalImage];
     [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) setImageWithOrientationRight:(UIImage *)image
+{
+    UIImage *newImage = [UIImage imageWithCGImage:[image CGImage]
+                                            scale:[image scale]
+                                      orientation: UIImageOrientationRight];
+    self.imageView.image = newImage;
 }
 
 // -------------------------------------------------

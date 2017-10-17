@@ -1,5 +1,5 @@
 //
-//  WandViewController.h
+//  Wand.h
 //  mojosmart
 //
 //  Created by Luiz Peres on 2017-10-17.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WandViewController : UIViewController
+@interface Wand : NSObject
+
++ (UIImage *) applyGaussianForImage:(UIImage *)image;
 
 @end
