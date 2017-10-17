@@ -26,6 +26,8 @@
     [self launchCameraAnimated:NO];
 }
 
+#pragma mark Screen Events
+
 // -------------------------------------------------
 - (IBAction)wandPressed:(id)sender {
 }
@@ -35,13 +37,11 @@
 }
 
 // -------------------------------------------------
-- (IBAction)settingsPressed:(id)sender {
-}
-
-// -------------------------------------------------
 - (IBAction)cameraPressed:(id)sender {
     [self launchCameraAnimated:YES];
 }
+
+#pragma mark Camera Related
 
 // -------------------------------------------------
 - (void) launchCameraAnimated:(BOOL)animated

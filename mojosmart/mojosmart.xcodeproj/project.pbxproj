@@ -20,6 +20,7 @@
 		AB1807F41F95EAB4004D178B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807F31F95EAB4004D178B /* SettingsViewController.m */; };
 		AB1807F71F95EAEA004D178B /* WandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807F61F95EAEA004D178B /* WandViewController.m */; };
 		AB1807FA1F95EB09004D178B /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807F91F95EB09004D178B /* Session.m */; };
+		AB1807FD1F95F244004D178B /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807FC1F95F244004D178B /* SettingsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		AB1807F61F95EAEA004D178B /* WandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WandViewController.m; sourceTree = "<group>"; };
 		AB1807F81F95EB09004D178B /* Session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
 		AB1807F91F95EB09004D178B /* Session.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		AB1807FB1F95F244004D178B /* SettingsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		AB1807FC1F95F244004D178B /* SettingsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,8 @@
 				AB1807F31F95EAB4004D178B /* SettingsViewController.m */,
 				AB1807F51F95EAEA004D178B /* WandViewController.h */,
 				AB1807F61F95EAEA004D178B /* WandViewController.m */,
+				AB1807FB1F95F244004D178B /* SettingsTableViewController.h */,
+				AB1807FC1F95F244004D178B /* SettingsTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				AB1807FA1F95EB09004D178B /* Session.m in Sources */,
 				AB00382F1F95ADE000035C5B /* ViewController.m in Sources */,
 				AB00383A1F95ADE000035C5B /* main.m in Sources */,
+				AB1807FD1F95F244004D178B /* SettingsTableViewController.m in Sources */,
 				AB1807EB1F95E8ED004D178B /* InfoViewController.m in Sources */,
 				AB1807F41F95EAB4004D178B /* SettingsViewController.m in Sources */,
 				AB00382C1F95ADE000035C5B /* AppDelegate.m in Sources */,
