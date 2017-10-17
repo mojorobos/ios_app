@@ -16,14 +16,37 @@
 
 @property (nonatomic, strong) UIImage *originalImage;
 
+@property (nonatomic, strong) UIView  *deleteLater;
+@property (nonatomic, strong) UILabel *deleteLabel;
+@property (nonatomic, strong) NSTimer *timer;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addTapCancel];
     
     [self launchCameraAnimated:NO];
+}
+
+// -------------------------------------------------
+- (void) addTapCancel
+{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [self.view addGestureRecognizer:tap];
+}
+
+// -------------------------------------------------
+- (void) tap:(UIGestureRecognizer *)tap
+{
+    if (self.deleteLater) {
+        [self.timer invalidate];
+        [self.deleteLabel removeFromSuperview];
+        [self.deleteLater removeFromSuperview];
+        self.deleteLater = nil;
+    }
 }
 
 #pragma mark Screen Events
@@ -34,6 +57,30 @@
 
 // -------------------------------------------------
 - (IBAction)sketchPressed:(id)sender {
+    [self tap:nil];
+    self.deleteLater = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width * 0.6, self.view.frame.size.height * 0.2)];
+    self.deleteLater.center = self.view.center;
+    [self.deleteLater setBackgroundColor:[UIColor colorWithWhite:1.0 alpha:0.8]];
+    
+    self.deleteLabel = [[UILabel alloc] init];
+    [self.deleteLater addSubview:self.deleteLabel];
+    
+    [self.view addSubview:self.deleteLater];
+    
+    __weak ViewController *weakSelf = self;
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.3 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        static int counter = 0;
+        if ((++counter)%10 != 0) {
+            ViewController *strongSelf = weakSelf;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                NSString *loading = @"Drawing";
+                loading = [loading stringByPaddingToLength:loading.length+(counter%10) withString:@"." startingAtIndex:0];
+                [strongSelf.deleteLabel setText:loading];
+                [strongSelf.deleteLabel sizeToFit];
+                strongSelf.deleteLabel.center = CGPointMake(strongSelf.deleteLater.frame.size.width/2, strongSelf.deleteLater.frame.size.height/2);
+            });
+        }
+    }];
 }
 
 // -------------------------------------------------
@@ -72,12 +119,3 @@
 }
 
 @end
-
-//Icons
-//Gregor Cresnar
-//Smashicons
-//Freepik
-
-
-
-
