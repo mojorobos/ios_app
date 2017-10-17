@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB00382C1F95ADE000035C5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB00382B1F95ADE000035C5B /* AppDelegate.m */; };
+		AB00382F1F95ADE000035C5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB00382E1F95ADE000035C5B /* ViewController.m */; };
+		AB0038321F95ADE000035C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0038301F95ADE000035C5B /* Main.storyboard */; };
+		AB0038341F95ADE000035C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0038331F95ADE000035C5B /* Assets.xcassets */; };
+		AB0038371F95ADE000035C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0038351F95ADE000035C5B /* LaunchScreen.storyboard */; };
+		AB00383A1F95ADE000035C5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0038391F95ADE000035C5B /* main.m */; };
+		AB0038441F95ADE000035C5B /* mojosmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0038431F95ADE000035C5B /* mojosmartTests.m */; };
+		AB00384F1F95ADE000035C5B /* mojosmartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB00384E1F95ADE000035C5B /* mojosmartUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB0038401F95ADE000035C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB00381F1F95ADE000035C5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB0038261F95ADE000035C5B;
+			remoteInfo = mojosmart;
+		};
+		AB00384B1F95ADE000035C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB00381F1F95ADE000035C5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB0038261F95ADE000035C5B;
+			remoteInfo = mojosmart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB0038271F95ADE000035C5B /* mojosmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mojosmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB00382A1F95ADE000035C5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB00382B1F95ADE000035C5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB00382D1F95ADE000035C5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB00382E1F95ADE000035C5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB0038311F95ADE000035C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB0038331F95ADE000035C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB0038361F95ADE000035C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB0038381F95ADE000035C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB0038391F95ADE000035C5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB00383F1F95ADE000035C5B /* mojosmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mojosmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0038431F95ADE000035C5B /* mojosmartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mojosmartTests.m; sourceTree = "<group>"; };
+		AB0038451F95ADE000035C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB00384A1F95ADE000035C5B /* mojosmartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mojosmartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB00384E1F95ADE000035C5B /* mojosmartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mojosmartUITests.m; sourceTree = "<group>"; };
+		AB0038501F95ADE000035C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB0038241F95ADE000035C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB00383C1F95ADE000035C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0038471F95ADE000035C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB00381E1F95ADE000035C5B = {
+			isa = PBXGroup;
+			children = (
+				AB0038291F95ADE000035C5B /* mojosmart */,
+				AB0038421F95ADE000035C5B /* mojosmartTests */,
+				AB00384D1F95ADE000035C5B /* mojosmartUITests */,
+				AB0038281F95ADE000035C5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB0038281F95ADE000035C5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB0038271F95ADE000035C5B /* mojosmart.app */,
+				AB00383F1F95ADE000035C5B /* mojosmartTests.xctest */,
+				AB00384A1F95ADE000035C5B /* mojosmartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB0038291F95ADE000035C5B /* mojosmart */ = {
+			isa = PBXGroup;
+			children = (
+				AB00382A1F95ADE000035C5B /* AppDelegate.h */,
+				AB00382B1F95ADE000035C5B /* AppDelegate.m */,
+				AB00382D1F95ADE000035C5B /* ViewController.h */,
+				AB00382E1F95ADE000035C5B /* ViewController.m */,
+				AB0038301F95ADE000035C5B /* Main.storyboard */,
+				AB0038331F95ADE000035C5B /* Assets.xcassets */,
+				AB0038351F95ADE000035C5B /* LaunchScreen.storyboard */,
+				AB0038381F95ADE000035C5B /* Info.plist */,
+				AB0038391F95ADE000035C5B /* main.m */,
+			);
+			path = mojosmart;
+			sourceTree = "<group>";
+		};
+		AB0038421F95ADE000035C5B /* mojosmartTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB0038431F95ADE000035C5B /* mojosmartTests.m */,
+				AB0038451F95ADE000035C5B /* Info.plist */,
+			);
+			path = mojosmartTests;
+			sourceTree = "<group>";
+		};
+		AB00384D1F95ADE000035C5B /* mojosmartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB00384E1F95ADE000035C5B /* mojosmartUITests.m */,
+				AB0038501F95ADE000035C5B /* Info.plist */,
+			);
+			path = mojosmartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB0038261F95ADE000035C5B /* mojosmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0038531F95ADE000035C5B /* Build configuration list for PBXNativeTarget "mojosmart" */;
+			buildPhases = (
+				AB0038231F95ADE000035C5B /* Sources */,
+				AB0038241F95ADE000035C5B /* Frameworks */,
+				AB0038251F95ADE000035C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mojosmart;
+			productName = mojosmart;
+			productReference = AB0038271F95ADE000035C5B /* mojosmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB00383E1F95ADE000035C5B /* mojosmartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0038561F95ADE000035C5B /* Build configuration list for PBXNativeTarget "mojosmartTests" */;
+			buildPhases = (
+				AB00383B1F95ADE000035C5B /* Sources */,
+				AB00383C1F95ADE000035C5B /* Frameworks */,
+				AB00383D1F95ADE000035C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB0038411F95ADE000035C5B /* PBXTargetDependency */,
+			);
+			name = mojosmartTests;
+			productName = mojosmartTests;
+			productReference = AB00383F1F95ADE000035C5B /* mojosmartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB0038491F95ADE000035C5B /* mojosmartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0038591F95ADE000035C5B /* Build configuration list for PBXNativeTarget "mojosmartUITests" */;
+			buildPhases = (
+				AB0038461F95ADE000035C5B /* Sources */,
+				AB0038471F95ADE000035C5B /* Frameworks */,
+				AB0038481F95ADE000035C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB00384C1F95ADE000035C5B /* PBXTargetDependency */,
+			);
+			name = mojosmartUITests;
+			productName = mojosmartUITests;
+			productReference = AB00384A1F95ADE000035C5B /* mojosmartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB00381F1F95ADE000035C5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Luiz Peres";
+				TargetAttributes = {
+					AB0038261F95ADE000035C5B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					AB00383E1F95ADE000035C5B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB0038261F95ADE000035C5B;
+					};
+					AB0038491F95ADE000035C5B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB0038261F95ADE000035C5B;
+					};
+				};
+			};
+			buildConfigurationList = AB0038221F95ADE000035C5B /* Build configuration list for PBXProject "mojosmart" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB00381E1F95ADE000035C5B;
+			productRefGroup = AB0038281F95ADE000035C5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB0038261F95ADE000035C5B /* mojosmart */,
+				AB00383E1F95ADE000035C5B /* mojosmartTests */,
+				AB0038491F95ADE000035C5B /* mojosmartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB0038251F95ADE000035C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0038371F95ADE000035C5B /* LaunchScreen.storyboard in Resources */,
+				AB0038341F95ADE000035C5B /* Assets.xcassets in Resources */,
+				AB0038321F95ADE000035C5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB00383D1F95ADE000035C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0038481F95ADE000035C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB0038231F95ADE000035C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB00382F1F95ADE000035C5B /* ViewController.m in Sources */,
+				AB00383A1F95ADE000035C5B /* main.m in Sources */,
+				AB00382C1F95ADE000035C5B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB00383B1F95ADE000035C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0038441F95ADE000035C5B /* mojosmartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0038461F95ADE000035C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB00384F1F95ADE000035C5B /* mojosmartUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB0038411F95ADE000035C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB0038261F95ADE000035C5B /* mojosmart */;
+			targetProxy = AB0038401F95ADE000035C5B /* PBXContainerItemProxy */;
+		};
+		AB00384C1F95ADE000035C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB0038261F95ADE000035C5B /* mojosmart */;
+			targetProxy = AB00384B1F95ADE000035C5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB0038301F95ADE000035C5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB0038311F95ADE000035C5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB0038351F95ADE000035C5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB0038361F95ADE000035C5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB0038511F95ADE000035C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB0038521F95ADE000035C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB0038541F95ADE000035C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T77XYGL4LJ;
+				INFOPLIST_FILE = mojosmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luizperes.mojosmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB0038551F95ADE000035C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T77XYGL4LJ;
+				INFOPLIST_FILE = mojosmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luizperes.mojosmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB0038571F95ADE000035C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T77XYGL4LJ;
+				INFOPLIST_FILE = mojosmartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luizperes.mojosmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mojosmart.app/mojosmart";
+			};
+			name = Debug;
+		};
+		AB0038581F95ADE000035C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T77XYGL4LJ;
+				INFOPLIST_FILE = mojosmartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luizperes.mojosmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mojosmart.app/mojosmart";
+			};
+			name = Release;
+		};
+		AB00385A1F95ADE000035C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T77XYGL4LJ;
+				INFOPLIST_FILE = mojosmartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luizperes.mojosmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mojosmart;
+			};
+			name = Debug;
+		};
+		AB00385B1F95ADE000035C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T77XYGL4LJ;
+				INFOPLIST_FILE = mojosmartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luizperes.mojosmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mojosmart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB0038221F95ADE000035C5B /* Build configuration list for PBXProject "mojosmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0038511F95ADE000035C5B /* Debug */,
+				AB0038521F95ADE000035C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0038531F95ADE000035C5B /* Build configuration list for PBXNativeTarget "mojosmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0038541F95ADE000035C5B /* Debug */,
+				AB0038551F95ADE000035C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0038561F95ADE000035C5B /* Build configuration list for PBXNativeTarget "mojosmartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0038571F95ADE000035C5B /* Debug */,
+				AB0038581F95ADE000035C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0038591F95ADE000035C5B /* Build configuration list for PBXNativeTarget "mojosmartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB00385A1F95ADE000035C5B /* Debug */,
+				AB00385B1F95ADE000035C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB00381F1F95ADE000035C5B /* Project object */;
+}
