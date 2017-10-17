@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "PopoverUtil.h"
 
-@interface ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface ViewController () <UIImagePickerControllerDelegate,
+                              UINavigationControllerDelegate,
+                              UIPopoverPresentationControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 
@@ -24,6 +27,24 @@
     [self launchCameraAnimated:NO];
 }
 
+// -------------------------------------------------
+- (IBAction)wandPressed:(id)sender {
+}
+
+// -------------------------------------------------
+- (IBAction)sketchPressed:(id)sender {
+}
+
+// -------------------------------------------------
+- (IBAction)settingsPressed:(id)sender {
+}
+
+// -------------------------------------------------
+- (IBAction)cameraPressed:(id)sender {
+    [self launchCameraAnimated:YES];
+}
+
+// -------------------------------------------------
 - (void) launchCameraAnimated:(BOOL)animated
 {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
@@ -34,6 +55,8 @@
     [self presentViewController:imagePicker animated:animated completion:nil];
 }
 
+
+// -------------------------------------------------
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
     self.originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
@@ -44,6 +67,7 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
+// -------------------------------------------------
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

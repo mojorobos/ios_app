@@ -15,6 +15,7 @@
 		AB00383A1F95ADE000035C5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0038391F95ADE000035C5B /* main.m */; };
 		AB0038441F95ADE000035C5B /* mojosmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0038431F95ADE000035C5B /* mojosmartTests.m */; };
 		AB00384F1F95ADE000035C5B /* mojosmartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB00384E1F95ADE000035C5B /* mojosmartUITests.m */; };
+		AB0038621F95DCCE00035C5B /* PopoverUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0038611F95DCCE00035C5B /* PopoverUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		AB00384E1F95ADE000035C5B /* mojosmartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mojosmartUITests.m; sourceTree = "<group>"; };
 		AB0038501F95ADE000035C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB00385D1F95B18000035C5B /* image_processing */ = {isa = PBXFileReference; lastKnownFileType = folder; name = image_processing; path = ../../image_processing; sourceTree = "<group>"; };
+		AB0038601F95DCCD00035C5B /* PopoverUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopoverUtil.h; sourceTree = "<group>"; };
+		AB0038611F95DCCE00035C5B /* PopoverUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopoverUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 		AB0038291F95ADE000035C5B /* mojosmart */ = {
 			isa = PBXGroup;
 			children = (
+				AB00385E1F95DC8C00035C5B /* Classes */,
 				AB00385D1F95B18000035C5B /* image_processing */,
 				AB00382A1F95ADE000035C5B /* AppDelegate.h */,
 				AB00382B1F95ADE000035C5B /* AppDelegate.m */,
@@ -132,6 +136,23 @@
 				AB0038501F95ADE000035C5B /* Info.plist */,
 			);
 			path = mojosmartUITests;
+			sourceTree = "<group>";
+		};
+		AB00385E1F95DC8C00035C5B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB00385F1F95DC9B00035C5B /* Helpers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AB00385F1F95DC9B00035C5B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AB0038601F95DCCD00035C5B /* PopoverUtil.h */,
+				AB0038611F95DCCE00035C5B /* PopoverUtil.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB00382F1F95ADE000035C5B /* ViewController.m in Sources */,
+				AB0038621F95DCCE00035C5B /* PopoverUtil.m in Sources */,
 				AB00383A1F95ADE000035C5B /* main.m in Sources */,
 				AB00382C1F95ADE000035C5B /* AppDelegate.m in Sources */,
 			);
