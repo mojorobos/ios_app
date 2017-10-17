@@ -10,7 +10,9 @@
 
 @interface ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+
+@property (nonatomic, strong) UIImage *originalImage;
 
 @end
 
@@ -27,14 +29,18 @@
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.delegate = self;
     imagePicker.sourceType =  UIImagePickerControllerSourceTypeCamera;
+    imagePicker.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     imagePicker.allowsEditing = NO;
     [self presentViewController:imagePicker animated:animated completion:nil];
 }
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
-    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    self.imageView.image = image;
+    self.originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    UIImage *newImage = [UIImage imageWithCGImage:[self.originalImage CGImage]
+                        scale:[self.originalImage scale]
+                  orientation: UIImageOrientationRight];
+    self.imageView.image = newImage;
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -42,5 +48,13 @@
     [super didReceiveMemoryWarning];
 }
 
-
 @end
+
+//Icons
+//Gregor Cresnar
+//Smashicons
+//Freepik
+
+
+
+
