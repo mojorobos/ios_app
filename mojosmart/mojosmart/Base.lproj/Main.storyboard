@@ -144,7 +144,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="info"/>
                                                 <connections>
-                                                    <segue destination="dc4-rH-M6T" kind="presentation" identifier="PopSeg" modalPresentationStyle="pageSheet" id="fmL-8D-Sex"/>
+                                                    <segue destination="dc4-rH-M6T" kind="presentation" identifier="PopSeg" id="fmL-8D-Sex"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -212,11 +212,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="402" y="72"/>
         </scene>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="Yk1-pG-UIj">
             <objects>
-                <viewController storyboardIdentifier="Pop" modalPresentationStyle="formSheet" id="dc4-rH-M6T" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Pop" modalPresentationStyle="formSheet" id="dc4-rH-M6T" customClass="InfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JbV-ZK-Edy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,7 +344,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uH-br-Xtd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688.8" y="530.28485757121439"/>
+            <point key="canvasLocation" x="1519" y="349"/>
         </scene>
     </scenes>
     <resources>

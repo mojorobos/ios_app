@@ -15,7 +15,7 @@
 		AB00383A1F95ADE000035C5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0038391F95ADE000035C5B /* main.m */; };
 		AB0038441F95ADE000035C5B /* mojosmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0038431F95ADE000035C5B /* mojosmartTests.m */; };
 		AB00384F1F95ADE000035C5B /* mojosmartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB00384E1F95ADE000035C5B /* mojosmartUITests.m */; };
-		AB0038621F95DCCE00035C5B /* PopoverUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0038611F95DCCE00035C5B /* PopoverUtil.m */; };
+		AB1807EB1F95E8ED004D178B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807EA1F95E8ED004D178B /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,8 @@
 		AB00384E1F95ADE000035C5B /* mojosmartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mojosmartUITests.m; sourceTree = "<group>"; };
 		AB0038501F95ADE000035C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB00385D1F95B18000035C5B /* image_processing */ = {isa = PBXFileReference; lastKnownFileType = folder; name = image_processing; path = ../../image_processing; sourceTree = "<group>"; };
-		AB0038601F95DCCD00035C5B /* PopoverUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopoverUtil.h; sourceTree = "<group>"; };
-		AB0038611F95DCCE00035C5B /* PopoverUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopoverUtil.m; sourceTree = "<group>"; };
+		AB1807E91F95E8ED004D178B /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		AB1807EA1F95E8ED004D178B /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,6 @@
 				AB00385D1F95B18000035C5B /* image_processing */,
 				AB00382A1F95ADE000035C5B /* AppDelegate.h */,
 				AB00382B1F95ADE000035C5B /* AppDelegate.m */,
-				AB00382D1F95ADE000035C5B /* ViewController.h */,
-				AB00382E1F95ADE000035C5B /* ViewController.m */,
 				AB0038301F95ADE000035C5B /* Main.storyboard */,
 				AB0038331F95ADE000035C5B /* Assets.xcassets */,
 				AB0038351F95ADE000035C5B /* LaunchScreen.storyboard */,
@@ -141,6 +139,7 @@
 		AB00385E1F95DC8C00035C5B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AB1807E81F95E8AB004D178B /* Controllers */,
 				AB00385F1F95DC9B00035C5B /* Helpers */,
 			);
 			path = Classes;
@@ -149,10 +148,19 @@
 		AB00385F1F95DC9B00035C5B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				AB0038601F95DCCD00035C5B /* PopoverUtil.h */,
-				AB0038611F95DCCE00035C5B /* PopoverUtil.m */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AB1807E81F95E8AB004D178B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB00382D1F95ADE000035C5B /* ViewController.h */,
+				AB00382E1F95ADE000035C5B /* ViewController.m */,
+				AB1807E91F95E8ED004D178B /* InfoViewController.h */,
+				AB1807EA1F95E8ED004D178B /* InfoViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB00382F1F95ADE000035C5B /* ViewController.m in Sources */,
-				AB0038621F95DCCE00035C5B /* PopoverUtil.m in Sources */,
 				AB00383A1F95ADE000035C5B /* main.m in Sources */,
+				AB1807EB1F95E8ED004D178B /* InfoViewController.m in Sources */,
 				AB00382C1F95ADE000035C5B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
