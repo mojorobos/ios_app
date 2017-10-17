@@ -16,6 +16,10 @@
 		AB0038441F95ADE000035C5B /* mojosmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0038431F95ADE000035C5B /* mojosmartTests.m */; };
 		AB00384F1F95ADE000035C5B /* mojosmartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB00384E1F95ADE000035C5B /* mojosmartUITests.m */; };
 		AB1807EB1F95E8ED004D178B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807EA1F95E8ED004D178B /* InfoViewController.m */; };
+		AB1807F11F95EA36004D178B /* SketchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807F01F95EA36004D178B /* SketchViewController.m */; };
+		AB1807F41F95EAB4004D178B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807F31F95EAB4004D178B /* SettingsViewController.m */; };
+		AB1807F71F95EAEA004D178B /* WandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807F61F95EAEA004D178B /* WandViewController.m */; };
+		AB1807FA1F95EB09004D178B /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1807F91F95EB09004D178B /* Session.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,14 @@
 		AB00385D1F95B18000035C5B /* image_processing */ = {isa = PBXFileReference; lastKnownFileType = folder; name = image_processing; path = ../../image_processing; sourceTree = "<group>"; };
 		AB1807E91F95E8ED004D178B /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		AB1807EA1F95E8ED004D178B /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		AB1807EF1F95EA36004D178B /* SketchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SketchViewController.h; sourceTree = "<group>"; };
+		AB1807F01F95EA36004D178B /* SketchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SketchViewController.m; sourceTree = "<group>"; };
+		AB1807F21F95EAB4004D178B /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		AB1807F31F95EAB4004D178B /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		AB1807F51F95EAEA004D178B /* WandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WandViewController.h; sourceTree = "<group>"; };
+		AB1807F61F95EAEA004D178B /* WandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WandViewController.m; sourceTree = "<group>"; };
+		AB1807F81F95EB09004D178B /* Session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		AB1807F91F95EB09004D178B /* Session.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +160,8 @@
 		AB00385F1F95DC9B00035C5B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AB1807F81F95EB09004D178B /* Session.h */,
+				AB1807F91F95EB09004D178B /* Session.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -159,6 +173,12 @@
 				AB00382E1F95ADE000035C5B /* ViewController.m */,
 				AB1807E91F95E8ED004D178B /* InfoViewController.h */,
 				AB1807EA1F95E8ED004D178B /* InfoViewController.m */,
+				AB1807EF1F95EA36004D178B /* SketchViewController.h */,
+				AB1807F01F95EA36004D178B /* SketchViewController.m */,
+				AB1807F21F95EAB4004D178B /* SettingsViewController.h */,
+				AB1807F31F95EAB4004D178B /* SettingsViewController.m */,
+				AB1807F51F95EAEA004D178B /* WandViewController.h */,
+				AB1807F61F95EAEA004D178B /* WandViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -296,10 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1807FA1F95EB09004D178B /* Session.m in Sources */,
 				AB00382F1F95ADE000035C5B /* ViewController.m in Sources */,
 				AB00383A1F95ADE000035C5B /* main.m in Sources */,
 				AB1807EB1F95E8ED004D178B /* InfoViewController.m in Sources */,
+				AB1807F41F95EAB4004D178B /* SettingsViewController.m in Sources */,
 				AB00382C1F95ADE000035C5B /* AppDelegate.m in Sources */,
+				AB1807F11F95EA36004D178B /* SketchViewController.m in Sources */,
+				AB1807F71F95EAEA004D178B /* WandViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
