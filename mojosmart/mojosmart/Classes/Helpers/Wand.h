@@ -10,6 +10,6 @@
 
 @interface Wand : NSObject
 
-+ (UIImage *) applyGaussianForImage:(UIImage *)image;
++ (UIImage *) applyGrayScaleOnImage:(UIImage *)image;
 
 @end

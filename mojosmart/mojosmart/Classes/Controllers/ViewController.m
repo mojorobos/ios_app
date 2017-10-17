@@ -57,7 +57,7 @@
     __weak ViewController *weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         ViewController *strongSelf = weakSelf;
-        [strongSelf setImageWithOrientationRight:[Wand applyGaussianForImage:strongSelf.originalImage]];
+        [strongSelf setImageWithOrientationRight:[Wand applyGrayScaleOnImage:strongSelf.originalImage]];
     });
 }
 

@@ -10,6 +10,16 @@
 
 typedef void (^WandBlock)(UInt8 *data, UInt32 *rgbImage, size_t width, size_t height);
 
+typedef union _ColorUnion {
+    UInt32 color;
+    struct {
+        UInt8 alpha;
+        UInt8 red;
+        UInt8 green;
+        UInt8 blue;
+    };
+} ColorUnion;
+
 @implementation Wand
 
 + executeBlock:(WandBlock)block forImage:(UIImage*)sampleImage
@@ -62,22 +72,18 @@ typedef void (^WandBlock)(UInt8 *data, UInt32 *rgbImage, size_t width, size_t he
     return resultUIImage;
 }
 
-+ (UIImage *) applyGaussianForImage:(UIImage *)sampleImage
++ (UIImage *) applyGrayScaleOnImage:(UIImage *)sampleImage
 {
     UIImage *newImage = [Wand executeBlock:^(UInt8 *data, UInt32 *rgbImage, size_t width, size_t height) {
-        int kRed = 1;
-        int kGreen = 2;
-        int kBlue = 4;
-        int colors = kGreen | kBlue | kRed;
-        
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
-                uint32_t rgbPixel=rgbImage[y*width+x];
-                uint32_t sum=0,count=0;
-                if (colors & kRed) {sum += (rgbPixel>>24)&255; count++;}
-                if (colors & kGreen) {sum += (rgbPixel>>16)&255; count++;}
-                if (colors & kBlue) {sum += (rgbPixel>>8)&255; count++;}
-                data[y*width+x]=sum/count;
+                NSInteger index = y*width+x;
+                ColorUnion rgbPixel;
+                rgbPixel.color = rgbImage[index];
+                UInt8 gray = 0.299 * rgbPixel.red +
+                             0.587 * rgbPixel.blue +
+                             0.114 * rgbPixel.blue;
+                data[index] = gray;
             }
         }
     } forImage:sampleImage];
