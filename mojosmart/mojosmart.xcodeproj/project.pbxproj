@@ -51,6 +51,7 @@
 		AB00384A1F95ADE000035C5B /* mojosmartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mojosmartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB00384E1F95ADE000035C5B /* mojosmartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mojosmartUITests.m; sourceTree = "<group>"; };
 		AB0038501F95ADE000035C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB00385D1F95B18000035C5B /* image_processing */ = {isa = PBXFileReference; lastKnownFileType = folder; name = image_processing; path = ../../image_processing; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		AB0038291F95ADE000035C5B /* mojosmart */ = {
 			isa = PBXGroup;
 			children = (
+				AB00385D1F95B18000035C5B /* image_processing */,
 				AB00382A1F95ADE000035C5B /* AppDelegate.h */,
 				AB00382B1F95ADE000035C5B /* AppDelegate.m */,
 				AB00382D1F95ADE000035C5B /* ViewController.h */,
@@ -436,7 +438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luizperes.mojosmart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,7 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luizperes.mojosmart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
